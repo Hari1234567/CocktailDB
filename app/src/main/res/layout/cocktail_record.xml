@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_margin="20dp"
+    android:layout_marginTop="40dp"
+    android:elevation="5dp"
+    android:padding="20dp"
+    app:cardCornerRadius="30dp"
+    app:layout_constraintDimensionRatio="H,1:1"
+    app:layout_constraintWidth_percent="0.5"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:background="@drawable/linen"
+    android:id="@+id/cocktailParent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <ImageView
+        android:id="@+id/cocktailLogo"
+        android:layout_width="151dp"
+        android:layout_height="147dp"
+
+
+        android:layout_gravity="left"
+        />
+    <ProgressBar
+        android:id = "@+id/imgProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="50dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Name"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/cocktailLogo"
+        android:layout_gravity="right"
+
+        android:gravity="center"
+        android:id = "@+id/cocktailName"
+        />
+
+
+
+
+
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>

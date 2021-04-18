@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CocktailDB2</string>
+    <string name="search_title"><i>Search...</i></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_label"><i>Search...</i></string>
+    <string name="result_fetch">Fetching Results...</string>
+    <string-array name="search_filters">
+        <item>Search by Name</item>
+        <item>Search by Ingredient</item>
+    </string-array>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.cocktaildb2.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_searchListFrag"
+            app:destination="@id/searchListFrag"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_favList"
+            app:destination="@id/favList" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchListFrag"
+        android:name="com.example.cocktaildb2.SearchListFrag"
+        android:label="fragment_search_list"
+        tools:layout="@layout/fragment_search_list" />
+    <fragment
+        android:id="@+id/favList"
+        android:name="com.example.cocktaildb2.FavList"
+        android:label="fragment_fav_list"
+        tools:layout="@layout/fragment_fav_list" />
+</navigation>

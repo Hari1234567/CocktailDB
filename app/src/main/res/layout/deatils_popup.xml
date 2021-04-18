@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/woodbrownlight"
+    android:id="@+id/parentt"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/cocktailLogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        app:srcCompat="@drawable/ic_launcher_background" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:text="Name"
+
+            android:layout_alignParentLeft="true"
+
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/cocktailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:text="@string/result_fetch"
+
+        android:layout_alignParentRight="true"
+
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:text="Category"
+
+            android:layout_alignParentLeft="true"
+
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:text="@string/result_fetch"
+
+            android:layout_alignParentRight="true"
+
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:text="Alcoholic"
+
+            android:layout_alignParentLeft="true"
+
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/alcoholic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:text="@string/result_fetch"
+
+            android:layout_alignParentRight="true"
+
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:text="Instructions"
+
+            android:layout_alignParentLeft="true"
+
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/instructions"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_margin="20dp"
+            android:gravity="right"
+            android:text="@string/result_fetch"
+            android:textSize="15dp"
+
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+
+
+            android:layout_marginStart="20dp"
+
+            android:layout_marginLeft="18dp"
+            android:layout_marginEnd="20dp"
+            android:text="Ingredients"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id='@+id/ingredientsLayout'
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            >
+           <androidx.cardview.widget.CardView
+
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:elevation="5dp"
+
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               app:cardCornerRadius="10dp"
+               app:cardBackgroundColor="@color/darkBrown"
+               >
+            <TextView
+
+                     android:text = "Ingredient"
+                    android:textColor="@color/Yellow"
+                     android:gravity="center"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="10dp"
+                />
+           </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                app:cardBackgroundColor="@color/darkBrown"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                app:cardBackgroundColor="@color/darkBrown"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/darkBrown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/darkBrown"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/darkBrown"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/darkBrown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/darkBrown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/darkBrown"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/darkBrown"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/darkBrown"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/darkBrown"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/darkBrown"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/darkBrown"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/darkBrown"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <TextView
+
+                    android:text = "Ingredient"
+                    android:gravity="center"
+                    android:textColor="@color/Yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
