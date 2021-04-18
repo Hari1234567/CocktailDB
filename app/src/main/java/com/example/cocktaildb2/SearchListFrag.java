@@ -170,7 +170,7 @@ public class SearchListFrag extends Fragment {
                     cocktailAdapter.notifyDataSetChanged();
 
                 }catch(NullPointerException n){
-                    printSnackbar("Couldn't Fetch Data, Please Reload");
+
                     totalProgressBar.setVisibility(View.INVISIBLE);
                 }
             }
